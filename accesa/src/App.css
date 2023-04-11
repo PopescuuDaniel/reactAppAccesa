@@ -1,0 +1,78 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 800px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.weather-data {
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.clear-sky {
+  background-image: url("../src/assets/ClearSky.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.clouds {
+  background-image: url("../src/assets/Clouds.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rain {
+  background-image: url("../src/assets/Rain.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+  input[type="text"],
+  button[type="submit"] {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
